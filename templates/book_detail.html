@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}{{ book.title }}{% endblock %}
+
+{% block content %}
+    <div style="display: flex;">
+        <div style="flex: 1;">
+            <img src="{{ book.image_url or 'https://via.placeholder.com/300x450' }}" 
+                 alt="{{ book.title }}" 
+                 style="max-width: 100%;">
+        </div>
+        <div style="flex: 2; padding-left: 20px;">
+            <h1>{{ book.title }}</h1>
+            <h3>by {{ book.author }}</h3>
+            <p class="price" style="font-size: 1.5em;">${{ "%.2f"|format(book.price) }}</p>
+            
+            <p>{{ book.description or "No description available." }}</p>
+            
+            {% if 'user_id' in session %}
+                <form method="POST" action="{{ url_for('add_to_cart', book_id=book.id) }}">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" value="1" min="1">
+                    <button type="submit" class="btn">Add to Cart</button>
+                </form>
+            {% else %}
+                <p><a href="{{ url_for('login') }}">Login</a> to add this book to your cart</p>
+            {% endif %}
+            
+            <a href="{{ url_for('books') }}" class="btn">Back to Books</a>
+        </div>
+    </div>
+{% endblock %}

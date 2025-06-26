@@ -68,7 +68,7 @@ header a:hover {
 /* Showcase */
 #showcase {
     min-height: 400px;
-    background-color: #000000;  /* 🔥 Solid black background */
+    background-color: #000000;  
     text-align: center;
     color: #ffffff;
     display: flex;
@@ -86,7 +86,7 @@ header a:hover {
 
 #showcase p {
     font-size: 20px;
-    color: #eee;
+    color: #000000;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
 

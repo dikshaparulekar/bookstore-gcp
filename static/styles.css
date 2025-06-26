@@ -208,3 +208,12 @@ footer {
 #showcase h1, #showcase p {
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
 }
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px 0;
+}
+

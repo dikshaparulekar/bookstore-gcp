@@ -67,21 +67,45 @@ header a:hover {
 
 /* Showcase */
 #showcase {
+  #  min-height: 400px;
+   # background: url('../img/showcase.jpg') no-repeat 0 -400px;
+    #text-align: center;
+    #color: #ffffff;
+#}
+#showcase {
     min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat 0 -400px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('../img/showcase.jpg') no-repeat center center/cover;
     text-align: center;
     color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 #showcase h1 {
-    margin-top: 100px;
     font-size: 55px;
-    margin-bottom: 10px;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
 }
 
 #showcase p {
     font-size: 20px;
+    color: #eee;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
 }
+
+
+#showcase h1 {
+  #  margin-top: 100px;
+  #  font-size: 55px;
+  #  margin-bottom: 10px;
+#}
+
+#showcase p {
+ #   font-size: 20px;
+#}
 
 /* Book Cards */
 .book-card {

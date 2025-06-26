@@ -14,7 +14,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 EXPOSE 8080
 
 # Set the Cloud SQL instance connection name in DB_HOST
-ENV DB_HOST="/cloudsql/vernal-shine-462108-t5:asia-south1:bookstore-data"
+ENV DB_HOST="/cloudsql/sonic-arcadia-444512-n2:asia-south1:bookstore-db"
 
 # Run the application using Gunicorn
 CMD ["gunicorn", "-b", ":8080", "main:app"]

@@ -196,3 +196,6 @@ footer {
         padding-bottom: 20px;
     }
 }
+#showcase h1, #showcase p {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
+}

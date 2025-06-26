@@ -81,13 +81,13 @@ header a:hover {
     font-size: 55px;
     font-weight: 700;
     margin: 0;
-    color: #ffffff;
+    color: #ffd700;
     text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 #showcase p {
     font-size: 20px;
-    color: #ffffff;
+    color: #00ffff;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
 

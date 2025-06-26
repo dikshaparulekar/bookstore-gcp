@@ -66,27 +66,31 @@ header a:hover {
 }
 
 /* Showcase */
-showcase {
+#showcase {
     min-height: 400px;
-    background: url('../img/showcase.jpg') no-repeat 0 -400px;
+    background-color: black; /* Simple black background */
     text-align: center;
-    color: #ffffff;
+    color: #ffffff; /* Text color white */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #showcase h1 {
     font-size: 55px;
     font-weight: 700;
-    color: #fffc; /* or use #ffffff */
-    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
     margin: 0;
+    color: #ffffff;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
 }
 
 #showcase p {
     font-size: 20px;
-    color: #fffc; /* Brighter color for visibility */
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.8);
+    color: #ffffff;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
 }
-}
+
 
 /* Book Cards */
 .book-card {

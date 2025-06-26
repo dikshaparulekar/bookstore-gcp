@@ -81,15 +81,16 @@ header a:hover {
     font-size: 55px;
     font-weight: 700;
     margin: 0;
-    color: #ffd700;
-    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.9);
+    color: #ffffff; /* changed from #ffd700 */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
 #showcase p {
     font-size: 20px;
-    color: #00ffff;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.9);
+    color: #dddddd; /* changed from #00ffff */
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.7);
 }
+
 
 
 /* Book Cards */
